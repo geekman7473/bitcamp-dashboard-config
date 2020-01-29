@@ -1,32 +1,28 @@
-name: RedPandaHacks
-version: I # Could also be a roman numeral or other number, will be concatenated with the hackathon name where necessary
-main_website: https://panda.hackumass.com
-dashboard_url: panda-dashboard.hackumass.com
+name: Bitcamp
+version: 7 # Could also be a roman numeral or other number, will be concatenated with the hackathon name where necessary
+main_website: https://bit.camp
+dashboard_url: my.bit.camp
 logos:
   primary_path: PandaLogo.png
   nav_path: navlogo.png
 emails:
-  donotreply: donotreplytothepandas@hackumass.com
-  contact: pandas@hackumass.com
+  donotreply: noreply@bit.camp
+  contact: hello@bit.camp
 slack:
-  subdomain: redpandahacks
+  subdomain: bitcamp2020
 applications:
-  mode: 'open'
+  mode: "open"
   # options: open, waitlist, or closed. defaults to closed.
   # The applications are still not opened unless the applications feature
   # flag is enabled.
 checkin:
   # Any participant with this email domain will be counted as from the host university
-  university_email_suffix: pandas.edu
-  university_name: UPandas
+  university_email_suffix: umd.edu
+  university_name: UMD
   university_name_checks:
-    - University of Pandas Amherst
-    - UPandas Amherst
-    - Pandas Amherst
-    - Pandas-Amherst
-    - Pandas at Amherst
-    - Pandas, Amherst
+    - University of Maryland
+    - University of Maryland, College Park
 projects:
   public: true
-  hacking_begins: "Oct 18, 2019 24:00:00"
-  hacking_ends: "Oct 20, 2019 10:30:00"
+  hacking_begins: "Apr 4, 2020 24:00:00"
+  hacking_ends: "Apr 6, 2020 10:30:00"
