@@ -6,7 +6,7 @@ logos:
   primary_path: PandaLogo.png
   nav_path: navlogo.png
 emails:
-  donotreply: noreply@bit.camp
+  donotreply: hello@bit.camp
   contact: hello@bit.camp
 slack:
   subdomain: bitcamp2020
