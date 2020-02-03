@@ -7,7 +7,7 @@ custom_fields:
    label: 'Emergency Contact Name'
    required: True
  - name: emergency_contact_relationship
-   label: 'Emergency Contact's Relationship to You'
+   label: "Emergency Contact's Relationship to You"
    required: True
  - name: emergency_contact_cell
    label: 'Emergency Contact Cell Number'
