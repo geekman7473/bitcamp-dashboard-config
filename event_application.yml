@@ -1,8 +1,20 @@
 options:
   hide_event_toc: False
   hide_mlh_toc: False
-  min_resume_age: 17
+  min_resume_age: 18
 custom_fields:
+ - name: emergency_contact_name
+   label: 'Emergency Contact Name'
+   required: True
+ - name: emergency_contact_relationship
+   label: 'Emergency Contact's Relationship to You'
+   required: True
+ - name: emergency_contact_cell
+   label: 'Emergency Contact Cell Number'
+   required: True
+ - name: emergency_contact_work
+   label: 'Emergency Contact Work Number'
+   required: True
  - name: linkedin_url
    label: 'LinkedIn URL'
    validate_regex: '\A(https:\/\/)?(www.)?linkedin.com\/in\/\S+\z'
@@ -28,16 +40,25 @@ custom_fields:
     - 4
     - 5 or more
    hidden: True
- - name: been_to_redpandahacks
-   label: 'Have you previously attended RedPandaHacks?'
+ - name: been_to_bitcamp
+   label: 'Have you previously attended Bitcamp?'
    type: boolean
    required: True
-   toggle_field: previous_redpandahacks_comments
- - name: previous_redpandahacks_comments
-   label: "Since you've attended RedPandaHacks before, is there anything new or different you'd like to see at RedPandaHacks I?"
+   toggle_field: previous_bitcamp_comments
+ - name: previous_bitcamp_comments
+   label: "Since you've attended Bitcamp before, is there anything new or different you'd like to see at Bitcamp 2020?"
    type: textarea
    max_chars: 500
    hidden: True
+ - name: why_bitcamp
+   label: 'Why do you want to attend Bitcamp?'
+   type: textarea
+   max_chars: 1000
+   required: True
+ - name: what_building_at_bitcamp
+   label: 'What are you planning to build at Bitcamp?'
+   type: textarea
+   max_chars: 500
  - name: programming_skills
    label: "Programming Skills (select all that apply, and if you don't know many that's okay!)"
    type: multiselect
@@ -51,7 +72,8 @@ custom_fields:
     - Kotlin
     - Swift
     - Objective C
-    - C/C++/C#
+    - C/C++
+    - C#
     - Python
  - name: hardware_skills
    label: 'Hardware Skills (select all that apply)'
@@ -67,9 +89,10 @@ custom_fields:
    type: textarea
    max_chars: 500
  - name: get_out_of_hum
-   label: 'What would you like to get out of RedPandaHacks? (select all that apply)'
+   label: 'What would you like to get out of Bitcamp? (select all that apply)'
    type: multiselect
    options:
+    - Learn basic programming skills
     - Learn more about hardware and hardware hacking
     - Learn more about web programming
     - Learn more about AI and machine learning
@@ -78,31 +101,23 @@ custom_fields:
     - Hack with people you don't know
     - Receive swag items from sponsors
     - Network with sponsors
- - name: interested_in_beginner
-   label: "Would you be interested in a 'beginner track' with specialized workshops to help you learn more about hardware and software hacking?"
-   type: boolean
-   required: True
  - name: how_did_you_hear
-   label: 'How did you hear about RedPandaHacks?'
+   label: 'How did you hear about Bitcamp?'
    type: multiselect
    required: True
    options:
-    - I previously attended RedPandaHacks
+    - I previously attended Bitcamp
     - From the MLH website
-    - From HackHer413
     - From another MLH event
     - Word of mouth
     - From a teacher
     - From a friend
     - Social media
-    - RedPandaHacks t-shirt guerilla marketing
-    - I go to UMass
+    - CS Department Listserv
     - Other
  - name: what_hardware
-   label: 'What hardware do you want to see at RedPandaHacks?'
+   label: 'What hardware do you want to see at Bitcamp?'
    type: 'textarea'
    max_chars: 500
- - name: fun_question
-   label: "Phew! That application was a bit long, but you're almost done! :D Just for fun... what's your spirit animal?"
 
 
