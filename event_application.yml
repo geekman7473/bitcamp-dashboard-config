@@ -123,7 +123,7 @@ custom_fields:
    type: textarea
    max_chars: 500
  - name: personality_classroom
-   label: 'This year we are planning something special, so we'd like to know more about your personality. These questions have no right/wrong answers! Where do you tend to sit in the classroom?'
+   label: "This year we are planning something special, so we'd like to know more about your personality. These questions have no right/wrong answers! Where do you tend to sit in the classroom?"
    type: select
    required: True
    options:
