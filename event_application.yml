@@ -3,6 +3,10 @@ options:
   hide_mlh_toc: False
   min_resume_age: 18
 custom_fields:
+ - name: over_18
+   label: 'Emergency Contact Name'
+   required: True
+   type: select
  - name: emergency_contact_name
    label: 'Emergency Contact Name'
    required: True
@@ -75,6 +79,7 @@ custom_fields:
     - C/C++
     - C#
     - Python
+    - AWS
  - name: hardware_skills
    label: 'Hardware Skills (select all that apply)'
    type: multiselect
@@ -84,10 +89,6 @@ custom_fields:
     - Wireless Communications
     - Circuits
     - 3D Printing
- - name: other_skills
-   label: 'If there are any other tech-related skills not listed above that you would like to share, list them below'
-   type: textarea
-   max_chars: 500
  - name: get_out_of_hum
    label: 'What would you like to get out of Bitcamp? (select all that apply)'
    type: multiselect
@@ -119,10 +120,5 @@ custom_fields:
    label: 'What hardware do you want to see at Bitcamp?'
    type: 'textarea'
    max_chars: 500
- - name: age_confirm
-   label: 'Because of limitations imposed by UMD, we are not allowed to host non-UMD minors (those under 18). We will be checking ID. If you are a minor not currently attending UMD, you will be turned away at the door. Checking the box below confirms that you are or will be 18 years or older by April 3rd, 2020, or are currently attending University of Maryland.'
-   type: multiselect
-   required: True
-   options:
-    - I am or will be 18 years or older by April 3, 2020 or currently attend University of Maryland
+
 
