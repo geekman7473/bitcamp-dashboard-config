@@ -3,10 +3,6 @@ options:
   hide_mlh_toc: False
   min_resume_age: 18
 custom_fields:
- - name: over_18
-   label: 'Emergency Contact Name'
-   required: True
-   type: select
  - name: emergency_contact_name
    label: 'Emergency Contact Name'
    required: True
@@ -167,5 +163,9 @@ custom_fields:
     - Free stuff
     - Workshops
     - First hackathon, I'll find out!
-
-
+  -name: age_confirm
+   label: 'Because of limitations imposed by UMD, we are not allowed to host non-UMD minors (those under 18). We will be checking ID. If you are a minor not currently attending UMD, you will be turned away at the door. Checking the box below confirms that you are or will be 18 years or older by April 3rd, 2020, or are currently attending University of Maryland.'
+   type: multiselect
+   required: True
+   options:
+    - I am or will be 18 years or older by April 3, 2020 or currently attend University of Maryland
