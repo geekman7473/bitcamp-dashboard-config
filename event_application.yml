@@ -12,9 +12,12 @@ custom_fields:
  - name: emergency_contact_cell
    label: 'Emergency Contact Cell Number'
    required: True
+   validate_regex: '\A[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}\z'
+   validate_error: 'Not a valid phone number. Example: (123) 456 - 7890'
  - name: emergency_contact_work
    label: 'Emergency Contact Work Number'
-   required: True
+   validate_regex: '\A[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}\z'
+   validate_error: 'Not a valid phone number. Example: (123) 456 - 7890'
  - name: linkedin_url
    label: 'LinkedIn URL'
    validate_regex: '\A(https:\/\/)?(www.)?linkedin.com\/in\/\S+\z'
@@ -41,7 +44,7 @@ custom_fields:
     - 5 or more
    hidden: True
  - name: been_to_bitcamp
-   label: 'Have you previously attended Bitcamp?'
+   label: 'Have you previously attended Bitcamp'
    type: boolean
    required: True
    toggle_field: previous_bitcamp_comments
@@ -51,12 +54,12 @@ custom_fields:
    max_chars: 500
    hidden: True
  - name: why_bitcamp
-   label: 'Why do you want to attend Bitcamp?'
+   label: 'Why do you want to attend Bitcamp'
    type: textarea
    max_chars: 1000
    required: True
  - name: what_building_at_bitcamp
-   label: 'What are you planning to build at Bitcamp?'
+   label: 'What are you planning to build at Bitcamp'
    type: textarea
    max_chars: 500
  - name: programming_skills
@@ -99,7 +102,7 @@ custom_fields:
     - Receive swag items from sponsors
     - Network with sponsors
  - name: how_did_you_hear
-   label: 'How did you hear about Bitcamp?'
+   label: 'How did you hear about Bitcamp'
    type: multiselect
    required: True
    options:
@@ -113,7 +116,7 @@ custom_fields:
     - CS Department Listserv
     - Other
  - name: what_hardware
-   label: 'What hardware do you want to see at Bitcamp?'
+   label: 'What hardware do you want to see at Bitcamp'
    type: textarea
    max_chars: 500
  - name: personality_classroom
@@ -126,7 +129,7 @@ custom_fields:
     - Front
     - Do people even go to lectures?
  - name: personality_crowd
-   label: 'In a crowd, how do you feel?'
+   label: 'In a crowd, how do you feel'
    type: select
    required: True
    options:
@@ -135,7 +138,7 @@ custom_fields:
     - Yay! People!
     - I'm a couch potato
  - name: personality_assignments
-   label: 'When do you start assignments?'
+   label: 'When do you start assignments'
    type: select
    required: True
    options:
@@ -144,7 +147,7 @@ custom_fields:
     - Right before class starts
     - What's an assignment?
  - name: personality_icecream
-   label: 'When you get icecream, what flavor do you pick?'
+   label: 'When you get icecream, what flavor do you pick'
    type: select
    required: True
    options:
@@ -153,7 +156,7 @@ custom_fields:
     - Depends on my mood
     - New one every time
  - name: personality_hackathons
-   label: 'What's your favorite thing about hackathons?'
+   label: 'What's your favorite thing about hackathons'
    type: select
    required: True
    options:
