@@ -50,7 +50,7 @@ custom_fields:
    required: True
    toggle_field: previous_bitcamp_comments
  - name: previous_bitcamp_comments
-   label: "Since you've attended Bitcamp before, is there anything new or different you'd like to see at Bitcamp 2020?"
+   label: "Since you've attended Bitcamp before, is there anything new or different you'd like to see at Bitcamp 2020? What are you looking forward to the most?"
    type: textarea
    max_chars: 500
    hidden: True
@@ -89,7 +89,7 @@ custom_fields:
     - Wireless Communications
     - Circuits
     - 3D Printing
- - name: get_out_of_hum
+ - name: get_out_of_bitcamp   
    label: 'What would you like to get out of Bitcamp? (select all that apply)'
    type: multiselect
    options:
@@ -118,7 +118,52 @@ custom_fields:
     - Other
  - name: what_hardware
    label: 'What hardware do you want to see at Bitcamp?'
-   type: 'textarea'
+   type: textarea
    max_chars: 500
+ - name: personality_classroom
+   label: 'This year we are planning something special, so we'd like to know more about your personality. These questions have no right/wrong answers! Where do you tend to sit in the classroom?'
+   type: select
+   required: True
+   options:
+    - Back
+    - Middle
+    - Front
+    - Do people even go to lectures?
+ - name: personality_crowd
+   label: 'In a crowd, how do you feel?'
+   type: select
+   required: True
+   options:
+    - My personal bubble is at least 5 ft wide
+    - I don't really care
+    - Yay! People!
+    - I'm a couch potato
+ - name: personality_assignments
+   label: 'When do you start assignments?'
+   type: select
+   required: True
+   options:
+    - The minute the professor announces it in class
+    - 2 days before it was assigned
+    - Right before class starts
+    - What's an assignment?
+ - name: personality_icecream
+   label: 'When you get icecream, what flavor do you pick?'
+   type: select
+   required: True
+   options:
+    - The same thing I always get
+    - The craziest, most colorful, flavor they have
+    - Depends on my mood
+    - New one every time
+ - name: personality_hackathons
+   label: 'What's your favorite thing about hackathons?'
+   type: select
+   required: True
+   options:
+    - Hacking
+    - Free stuff
+    - Workshops
+    - First hackathon, I'll find out!
 
 
