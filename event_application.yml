@@ -3,11 +3,15 @@ options:
   hide_mlh_toc: False
   min_resume_age: 18
 custom_fields:
+ - name: over_18
+   label: 'Emergency Contact Name'
+   required: True
+   type: select
  - name: emergency_contact_name
    label: 'Emergency Contact Name'
    required: True
  - name: emergency_contact_relationship
-   label: 'Emergency Contact's Relationship to You'
+   label: "Emergency Contact's Relationship to You"
    required: True
  - name: emergency_contact_cell
    label: 'Emergency Contact Cell Number'
@@ -88,7 +92,7 @@ custom_fields:
     - Wireless Communications
     - Circuits
     - 3D Printing
- - name: get_out_of_bitcamp
+ - name: get_out_of_bitcamp   
    label: 'What would you like to get out of Bitcamp? (select all that apply)'
    type: multiselect
    options:
