@@ -3,10 +3,16 @@ options:
   hide_mlh_toc: False
   min_resume_age: 18
 custom_fields:
- - name: over_18
-   label: 'Emergency Contact Name'
-   required: True
-   type: select
+ - name: bus_registration
+   label: 'Do you require bus transportation to the event? If so, select the route that would most suit you below'
+   type: multiselect
+   options:
+    - "Route 1: Johns Hopkins University, University of Maryland at Baltimore County"
+    - "Route 2: University of Virginia, Virginia Tech, Virginia Commonwealth University"
+    - "Route 3:  Rutgers University, Temple University"
+    - "Route 4: Stony Brook University, and New York University (Tandon Campus)"
+    - "No, none of these bus routes work for me"
+    - "No, I can provide my own transport"
  - name: emergency_contact_name
    label: 'Emergency Contact Name'
    required: True
@@ -101,6 +107,8 @@ custom_fields:
     - Learn more about web programming
     - Learn more about AI and machine learning
     - Learn more about iOS/Android app development
+    - Learn more about Game Development (Unity)
+    - Learn more about UI/UX design
     - Hack with people you know
     - Hack with people you don't know
     - Receive swag items from sponsors
@@ -124,7 +132,7 @@ custom_fields:
    type: textarea
    max_chars: 500
  - name: personality_classroom
-   label: 'This year we are planning something special, so we'd like to know more about your personality. These questions have no right/wrong answers! Where do you tend to sit in the classroom?'
+   label: "This year we are planning something special, so we'd like to know more about your personality. These questions have no right/wrong answers! Where do you tend to sit in the classroom?"
    type: select
    required: True
    options:
@@ -168,5 +176,9 @@ custom_fields:
     - Free stuff
     - Workshops
     - First hackathon, I'll find out!
-
-
+  - name: age_confirm
+    label: 'Because of limitations imposed by UMD, minors who are not current UMD students will have to attend the event via our minors program. For more information about our minors program, feel free to email minors@bit.camp. Checking the box below confirms that you are or will be 18 years or older by April 3rd, 2020, or are currently attending University of Maryland.'
+    type: multiselect
+    required: True
+    options:
+     - I am or will be 18 years or older by April 3, 2020 or currently attend University of Maryland
