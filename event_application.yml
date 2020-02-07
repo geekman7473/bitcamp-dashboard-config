@@ -168,7 +168,7 @@ custom_fields:
     - Depends on my mood
     - New one every time
  - name: personality_hackathons
-   label: 'What's your favorite thing about hackathons'
+   label: "What's your favorite thing about hackathons"
    type: select
    required: True
    options:
