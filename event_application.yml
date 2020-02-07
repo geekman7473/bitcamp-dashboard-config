@@ -3,6 +3,16 @@ options:
   hide_mlh_toc: False
   min_resume_age: 18
 custom_fields:
+ - name: bus_registration
+   label: 'Do you require bus transportation to the event? If so, select the route that would most suit you below'
+   type: multiselect
+   options:
+    - "Route 1: Johns Hopkins University, University of Maryland at Baltimore County"
+    - "Route 2: University of Virginia, Virginia Tech, Virginia Commonwealth University"
+    - "Route 3:  Rutgers University, Temple University"
+    - "Route 4: Stony Brook University, and New York University (Tandon Campus)"
+    - "No, none of these bus routes work for me"
+    - "No, I can provide my own transport"
  - name: emergency_contact_name
    label: 'Emergency Contact Name'
    required: True
@@ -12,9 +22,12 @@ custom_fields:
  - name: emergency_contact_cell
    label: 'Emergency Contact Cell Number'
    required: True
+   validate_regex: '\A[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}\z'
+   validate_error: 'Not a valid phone number. Example: (123) 456 - 7890'
  - name: emergency_contact_work
    label: 'Emergency Contact Work Number'
-   required: True
+   validate_regex: '\A[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}\z'
+   validate_error: 'Not a valid phone number. Example: (123) 456 - 7890'
  - name: linkedin_url
    label: 'LinkedIn URL'
    validate_regex: '\A(https:\/\/)?(www.)?linkedin.com\/in\/\S+\z'
@@ -41,7 +54,7 @@ custom_fields:
     - 5 or more
    hidden: True
  - name: been_to_bitcamp
-   label: 'Have you previously attended Bitcamp?'
+   label: 'Have you previously attended Bitcamp'
    type: boolean
    required: True
    toggle_field: previous_bitcamp_comments
@@ -51,12 +64,12 @@ custom_fields:
    max_chars: 500
    hidden: True
  - name: why_bitcamp
-   label: 'Why do you want to attend Bitcamp?'
+   label: 'Why do you want to attend Bitcamp'
    type: textarea
    max_chars: 1000
    required: True
  - name: what_building_at_bitcamp
-   label: 'What are you planning to build at Bitcamp?'
+   label: 'What are you planning to build at Bitcamp'
    type: textarea
    max_chars: 500
  - name: programming_skills
@@ -101,7 +114,7 @@ custom_fields:
     - Receive swag items from sponsors
     - Network with sponsors
  - name: how_did_you_hear
-   label: 'How did you hear about Bitcamp?'
+   label: 'How did you hear about Bitcamp'
    type: multiselect
    required: True
    options:
@@ -115,7 +128,7 @@ custom_fields:
     - CS Department Listserv
     - Other
  - name: what_hardware
-   label: 'What hardware do you want to see at Bitcamp?'
+   label: 'What hardware do you want to see at Bitcamp'
    type: textarea
    max_chars: 500
  - name: personality_classroom
@@ -128,7 +141,7 @@ custom_fields:
     - Front
     - Do people even go to lectures?
  - name: personality_crowd
-   label: 'In a crowd, how do you feel?'
+   label: 'In a crowd, how do you feel'
    type: select
    required: True
    options:
@@ -137,7 +150,7 @@ custom_fields:
     - Yay! People!
     - I'm a couch potato
  - name: personality_assignments
-   label: 'When do you start assignments?'
+   label: 'When do you start assignments'
    type: select
    required: True
    options:
@@ -146,7 +159,7 @@ custom_fields:
     - Right before class starts
     - What's an assignment?
  - name: personality_icecream
-   label: 'When you get icecream, what flavor do you pick?'
+   label: 'When you get icecream, what flavor do you pick'
    type: select
    required: True
    options:
@@ -155,7 +168,7 @@ custom_fields:
     - Depends on my mood
     - New one every time
  - name: personality_hackathons
-   label: "What's your favorite thing about hackathons?"
+   label: "What's your favorite thing about hackathons"
    type: select
    required: True
    options:
@@ -164,7 +177,7 @@ custom_fields:
     - Workshops
     - First hackathon, I'll find out!
   - name: age_confirm
-    label: 'Because of limitations imposed by UMD, we are not allowed to host non-UMD minors (those under 18). We will be checking ID. If you are a minor not currently attending UMD, you will be turned away at the door. Checking the box below confirms that you are or will be 18 years or older by April 3rd, 2020, or are currently attending University of Maryland.'
+    label: 'Because of limitations imposed by UMD, minors who are not current UMD students will have to attend the event via our minors program. For more information about our minors program, feel free to email minors@bit.camp. Checking the box below confirms that you are or will be 18 years or older by April 3rd, 2020, or are currently attending University of Maryland.'
     type: multiselect
     required: True
     options:
