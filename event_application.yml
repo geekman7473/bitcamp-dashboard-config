@@ -1,7 +1,7 @@
 options:
   hide_event_toc: False
   hide_mlh_toc: False
-  min_resume_age: 18
+  min_resume_age: 100
 custom_fields:
  - name: bus_registration
    label: 'Do you require bus transportation to the event? If so, select the route that would most suit you below'
@@ -176,9 +176,9 @@ custom_fields:
     - Free stuff
     - Workshops
     - First hackathon, I'll find out!
-  - name: age_confirm
-    label: 'Because of limitations imposed by UMD, minors who are not current UMD students will have to attend the event via our minors program. For more information about our minors program, feel free to email minors@bit.camp. Checking the box below confirms that you are or will be 18 years or older by April 3rd, 2020, or are currently attending University of Maryland.'
-    type: multiselect
-    required: True
-    options:
-     - I am or will be 18 years or older by April 3, 2020 or currently attend University of Maryland
+ - name: age_confirm
+   label: 'Because of limitations imposed by UMD, minors who are not current UMD students will have to attend the event via our minors program. For more information about our minors program, feel free to email minors@bit.camp. Checking the box below confirms that you are or will be 18 years or older by April 3rd, 2020, or are currently attending University of Maryland.'
+   type: multiselect
+   required: True
+   options:
+    - I am or will be 18 years or older by April 3, 2020 or currently attend University of Maryland
