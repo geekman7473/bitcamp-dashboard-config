@@ -7,18 +7,18 @@
   color: #ff6f3f;
 }
 
-.card-status .bg-success {
+.card-status.bg-success {
   background: #546b54 !important;
 }
 
-.card-status .bg-purple {
+.card-status.bg-purple {
   background: #c53e3a !important;
 }
 
-.card-status .bg-blue {
+.card-status.bg-blue {
   background: #36405f !important;
 }
 
-.card-status-left .bg-purple {
+.card-status-left.bg-purple {
   background: #ff6f3f !important;
 }
