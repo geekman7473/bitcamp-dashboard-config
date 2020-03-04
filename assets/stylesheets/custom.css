@@ -3,6 +3,11 @@
   color: white;
 }
 
+.btn-bitcamp:hover {
+  background: #ff6f3f;
+  color: white;
+}
+
 .bitcamp-orange {
   color: #ff6f3f;
 }
